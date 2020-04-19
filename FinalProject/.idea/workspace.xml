@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c6e1a6d9-c6d3-49f4-b9b6-12790d010d42" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login-init.php" beforeDir="false" afterPath="$PROJECT_DIR$/login-init.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +60,9 @@
       <option name="presentableId" value="Default" />
       <updated>1587260208405</updated>
       <workItem from="1587260210470" duration="4841000" />
-      <workItem from="1587265629451" duration="16000" />
+      <workItem from="1587265629451" duration="2888000" />
+      <workItem from="1587270797872" duration="758000" />
+      <workItem from="1587271679583" duration="258000" />
     </task>
     <servers />
   </component>
@@ -68,9 +70,17 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="463" y="128" key="FileChooserDialogImpl" timestamp="1587271232890">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="463" y="128" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1587271232890" />
     <state x="517" y="301" key="NewPhpFileDialog" timestamp="1587263457995">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="517" y="301" key="NewPhpFileDialog/0.0.1366.738@0.0.1366.738" timestamp="1587263457995" />
+    <state x="391" y="198" key="com.intellij.ide.util.TipDialog" timestamp="1587271685704">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="391" y="198" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1587271685704" />
   </component>
 </project>

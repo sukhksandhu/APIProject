@@ -1,7 +1,7 @@
 <?php
 //Reference from https://www.youtube.com/watch?v=g0l28ta4XjA for facebook aPI login during college project
-   // session_start();
-    require './login-init.php';
+// session_start();
+require './login-init.php';
 
 ?>
 
@@ -29,13 +29,12 @@
     <div  class=" border border-danger text-center">
         <h1>Welcome To Essentials Cart!</h1>
     </div>
-    <div>
-
+    <div class="row">
         <?php
-            if(isset($_SESSION['access_token'])) :?>
-                <a href="Logout.php">Logout</a>
-            <?php else: ?>
-         <?php   endif; ?>
+        if(isset($_SESSION['access_token'])) :?>
+            <a href="Logout.php">Logout</a>
+        <?php else: ?>
+        <?php   endif; ?>
 
         <a href="<?php echo $login_url; ?>">Login with Facebook</a>
         <div>
@@ -43,19 +42,34 @@
             <?php  if(isset($_SESSION['access_token']))
             {
 
-                try {
+                try
+                {
                     $fb->setDefaultAccessToken($_SESSION['access_token']);
                     $res = $fb->get('/me?locale=en_US&fields=name,email');
                     $user = $res->getGraphUser();
 
                     echo "Welcome " . $user->getField('name') . "!";
+                    $mycart =['Carrors','Apples','Broccoli','toothpaste','flour','meat','cookies','tissue'];
+                    $prices =[5.00,6.00,10.99,2.25,12.00,10.99,3.25,12.50];
+                    ?>
+                    <div class="text-center"> <h5>Fill your cart with your favourite grocery items</h5>
+                        <?php for($i=0;$i<count($mycart);$i++)
+                        {
+                            echo "<div><input type=checkbox >$". $prices[$i] . "</input>" . "  <strong>". $mycart[$i]. "</strong></div>";
+                        }
 
-                } catch (Exception $exc) {
+                        ?>
+                        <input class="btn-danger" type="submit" value="Checkout" />
+                    </div>
+                    <?php
+                } catch (Exception $exc)
+                {
                     echo $exc->getTraceAsString();
                 }
             }
             ?>
         </div>
+        <div class="col-sm-4"><img src="cart.jpg" alt="grocery cart icon with vegetables" /></div>
     </div>
 </main>
 <footer class="container bg-secondary text-white">
